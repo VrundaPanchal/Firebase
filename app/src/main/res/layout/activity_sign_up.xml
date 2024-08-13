@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="10">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_30dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/splash_logo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/img" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+
+                    android:paddingEnd="@dimen/dimens_10dp"
+                    android:text="Register"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimens_24sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_30dp" />
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/dimens_10dp"
+                    android:layout_marginTop="@dimen/dimens_10dp"
+                    android:elevation="@dimen/dimens_30dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/dimens_10dp"
+                    app:cardElevation="@dimen/dimens_10dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
+                        android:hint="@string/lbl_email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:padding="@dimen/dimens_8dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/dimens_18sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/dimens_10dp"
+                    android:layout_marginTop="@dimen/dimens_10dp"
+                    android:elevation="@dimen/dimens_30dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/dimens_10dp"
+                    app:cardElevation="@dimen/dimens_10dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
+                        android:hint="@string/lbl_password"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:padding="@dimen/dimens_8dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/grey"
+                        android:textSize="18sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/dimens_10dp"
+                    android:layout_marginTop="@dimen/dimens_10dp"
+                    android:elevation="@dimen/dimens_30dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/dimens_10dp"
+                    app:cardElevation="@dimen/dimens_10dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtConPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
+                        android:hint="@string/lbl_confirm_password"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:padding="@dimen/dimens_8dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/dimens_18sp" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/dimens_30dp"
+                    android:layout_marginBottom="@dimen/dimens_10dp"
+                    android:layout_marginLeft="@dimen/dimens_10dp"
+                    android:layout_marginRight="@dimen/dimens_10dp"
+                    android:elevation="@dimen/dimens_30dp"
+                    android:padding="@dimen/dimens_10dp"
+                    app:cardCornerRadius="@dimen/dimens_10dp"
+                    app:cardElevation="@dimen/dimens_5dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnSignup"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/blue"
+                        android:padding="@dimen/dimens_8dp"
+                        android:text="@string/lbl_Signup"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimens_18sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <!--        <View-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="?attr/actionBarSize"/>-->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="@dimen/dimens_20dp"
+                android:layout_marginBottom="@dimen/dimens_30dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtdonotAcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/already_have_an_account"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/dimens_18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtlogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@id/txtdonotAcc"
+                    android:paddingStart="@dimen/dimens_5dp"
+                    android:text="@string/lbl_login"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/dimens_18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

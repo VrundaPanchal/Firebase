@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Movies Firebase</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_login">Login</string>
+
+    <string name="lbl_Signup">Register</string>
+    <string name="lbl_dont_have_an_account">Don\'t have an Account?</string>
+    <string name="lbl_confirm_password">Confirm Password</string>
+    <string name="lbl_name">Name</string>
+    <string name="enter_your_security_question">Enter your Security Question</string>
+    <string name="enter_your_security_answer">Enter your Security Answer</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="answer">Answer</string>
+    <string name="submit">Submit</string>
+    <string name="title">Title</string>
+    <string name="studio">Studio</string>
+    <string name="criticsrating">Critics Rating</string>
+    <string name="medit">Edit</string>
+    <string name="mdelete">Delete</string>
+</resources>

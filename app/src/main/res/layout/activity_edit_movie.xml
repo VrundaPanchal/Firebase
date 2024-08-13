@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="60dp"
+    tools:context=".EditMovie">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/dimens_10dp"
+        android:layout_marginTop="@dimen/dimens_10dp"
+        android:elevation="@dimen/dimens_30dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dimens_10dp"
+        app:cardElevation="@dimen/dimens_10dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:hint="Title"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="@dimen/dimens_8dp"
+            android:singleLine="true"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/dimens_18sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/dimens_10dp"
+        android:layout_marginTop="@dimen/dimens_10dp"
+        android:elevation="@dimen/dimens_30dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dimens_10dp"
+        app:cardElevation="@dimen/dimens_10dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/studio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:hint="Studio"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="@dimen/dimens_8dp"
+            android:singleLine="true"
+            android:textColorHint="@color/grey"
+            android:textSize="18sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/dimens_10dp"
+        android:layout_marginTop="@dimen/dimens_10dp"
+        android:elevation="@dimen/dimens_30dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dimens_10dp"
+        app:cardElevation="@dimen/dimens_10dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_rate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:hint="Critics Rating"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="@dimen/dimens_8dp"
+            android:singleLine="true"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/dimens_18sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dimens_30dp"
+        android:layout_marginBottom="@dimen/dimens_10dp"
+        android:layout_marginLeft="@dimen/dimens_10dp"
+        android:layout_marginRight="@dimen/dimens_10dp"
+        android:elevation="@dimen/dimens_30dp"
+        android:padding="@dimen/dimens_10dp"
+        app:cardCornerRadius="@dimen/dimens_10dp"
+        app:cardElevation="@dimen/dimens_5dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:padding="@dimen/dimens_8dp"
+            android:text="Update Details"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimens_18sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

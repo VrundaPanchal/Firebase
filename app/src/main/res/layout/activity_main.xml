@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/splash_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/img" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingEnd="@dimen/dimens_10dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimens_24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/dimens_10dp"
+            android:layout_marginTop="@dimen/dimens_20dp"
+            android:elevation="@dimen/dimens_30dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/dimens_10dp"
+            app:cardElevation="@dimen/dimens_10dp">
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:hint="@string/lbl_email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="@dimen/dimens_8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/dimens_10dp"
+            android:layout_marginTop="@dimen/dimens_10dp"
+            android:elevation="@dimen/dimens_30dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/dimens_10dp"
+            app:cardElevation="@dimen/dimens_10dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:hint="@string/lbl_password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="@dimen/dimens_8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/dimens_18sp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/dimens_10dp"
+            android:layout_marginTop="@dimen/dimens_30dp"
+            android:layout_marginRight="@dimen/dimens_10dp"
+            android:elevation="@dimen/dimens_30dp"
+            android:padding="@dimen/dimens_10dp"
+            app:cardCornerRadius="@dimen/dimens_10dp"
+            app:cardElevation="@dimen/dimens_10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blue"
+                android:padding="@dimen/dimens_8dp"
+                android:text="@string/lbl_login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimens_18sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="@dimen/dimens_20dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center|bottom"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtdonotAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lbl_dont_have_an_account"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/dimens_18sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@id/txtdonotAcc"
+            android:paddingStart="@dimen/dimens_5dp"
+            android:text="@string/lbl_Signup"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/dimens_18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>

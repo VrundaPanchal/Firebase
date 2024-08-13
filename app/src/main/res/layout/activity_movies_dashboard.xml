@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/moviesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:layout_weight="9"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/black"
+        android:contentDescription="TODO"
+        android:padding="8dp"
+        android:layout_weight="1"
+        android:src="@drawable/v_add"
+        android:tintMode="@color/white" />
+
+</LinearLayout>

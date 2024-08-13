@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1042490576911",
+    "project_id": "movies-fae7f",
+    "storage_bucket": "movies-fae7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042490576911:android:9443b637e3ba1ee054137a",
+        "android_client_info": {
+          "package_name": "com.example.moviesfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpGsrch-ebEFRv4260O-Z2nxyJXhbMDo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
